@@ -1,6 +1,6 @@
 header {
     overflow: hidden;
-    padding-top: 7rem;
+    padding-top: 3rem;
     height: 100vh;
 }
 
@@ -37,7 +37,7 @@ header {
     width: 22rem;
     height: 39rem;
     position: relative;
-    left: 19rem;
+    left: 22rem;
     bottom: -2rem;
 }
 
@@ -59,17 +59,23 @@ header {
         height: 60vh;
     }
 
+    .cta {
+        margin-top: 0px;
+    }
+
     .me {
         position: relative;
-        left: 13rem;
+        bottom: 0;
+        left: 25%;
     }
 
     .scroll-down {
-        right: 7rem;
+        top: 75%;
+        right: 10%;
     }
 
     .socialheader {
-        bottom: 30rem;
+        bottom: 3rem;
         left: 9rem;
     }
 }
@@ -85,7 +91,20 @@ header {
         display: none;
     }
 
+    .cta {
+        margin-top: 10px;
+    }
+
+    .heading {
+        font-size: 40px;
+    }
+
     .me {
-        left: 2rem;
+        width: 100%;
+        padding: 5px 5px;
+        position: relative;
+        left: 0;
+        bottom: -5%;
+
     }
 }

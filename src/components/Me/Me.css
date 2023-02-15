@@ -1,0 +1,83 @@
+.about-container {
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+}
+
+.about-me {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background: linear-gradient(45deg, transparent, lightcyan, transparent);
+    border-radius: 1em;
+}
+
+.about-me-image {
+    border-radius: 1em;
+    overflow: hidden;
+    transform: rotate(5deg);
+    transition: var(--transition);
+}
+
+.about-me-image:hover {
+    transform: rotate(0deg);
+}
+
+.about-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+}
+
+.about-card {
+    background-color: ghostwhite;
+    border: 1px solid transparent;
+    text-align: center;
+    color: black;
+    border-radius: 1em;
+    padding: 1em;
+    transition: all 200ms ease;
+}
+
+.about-card:hover {
+    background-color: transparent;
+    border-color: ghostwhite;
+    color: white;
+
+}
+
+.about-icon {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.about-card h5 {
+    font-size: 1em;
+}
+
+.about-contents p {
+    margin: 2em 0 2em 0;
+    color: floralwhite;
+
+}
+
+/*----------Media queries(Medium devices)----------*/
+@media screen and (max-width:1024px) {}
+
+/*----------Media queries(Small devices)----------*/
+@media screen and (max-width:600px) {
+    .about-container {
+        grid-template-columns: 100%;
+        justify-content: center;
+    }
+
+    .about-me {
+        width: 20em;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .about-contents {
+        text-align: center;
+    }
+
+}

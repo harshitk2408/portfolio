@@ -2,8 +2,8 @@ import React from 'react'
 import './Education.css'
 export default function Education() {
     return (
-        <div>
+        <section id='education'>
             Education
-        </div>
+        </section>
     )
 }

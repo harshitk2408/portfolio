@@ -6,14 +6,14 @@ import mypic from '../../assets/harshit.png'
 export default function Header() {
     return (
         <header>
-            <div className='container header-container'>
+            <div className='container header-container' id='header'>
                 <h4>Hello I'm</h4>
-                <h1>Harshit Khurana</h1>
+                <h1 className='heading'>Harshit Khurana</h1>
                 <h4 className='text-light'>Programmer and Front End Developer</h4>
                 <Cta />
                 <Socials />
                 <img src={mypic} alt="mypic" className='me'></img>
-                <a className='scroll-down' href="/">Scroll Down</a>
+                <a className='scroll-down' href="#contact">Scroll Down</a>
             </div>
         </header>
     )
