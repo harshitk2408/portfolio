@@ -1,0 +1,76 @@
+.ed-container {
+    height: 100vh;
+    width: 215vh;
+    align-items: center;
+    gap: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    margin-top: 1em;
+}
+
+.ed-col {
+    height: 30vh;
+    display: flex;
+    width: 36vh;
+    height: 36vh;
+    justify-content: left;
+    transition: var(--transition);
+}
+
+.inst-logo {
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.ed-content {
+    display: none;
+    position: relative;
+    left: 2em;
+    top: 5em;
+}
+
+.ed-col:hover {
+    width: 150vh;
+    height: 30vh;
+}
+
+.ed-col:hover .inst-logo {
+    object-fit: cover;
+}
+
+.ed-col:hover .ed-content {
+    display: block;
+}
+
+.ed-logo {
+    border-radius: 50%;
+    width: 35vh;
+    height: 35vh;
+}
+
+.ed-col-school {
+    height: 30vh;
+    display: flex;
+    width: 36vh;
+    height: 36vh;
+    justify-content: right;
+    transition: var(--transition);
+}
+
+.ed-col-school:hover {
+    width: 150vh;
+    gap: 2em;
+}
+
+.ed-col-school:hover .ed-content {
+    display: block;
+}
+
+@media screen and (max-width:600px) {
+    .section {
+        margin-top: 11rem;
+    }
+}
