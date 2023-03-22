@@ -5,6 +5,7 @@
     gap: 3em;
     display: flex;
     flex-direction: column;
+    transition: var(--transition);
 }
 
 .section {
@@ -12,12 +13,9 @@
 }
 
 .ed-col {
-    height: 30vh;
     display: flex;
-    width: 36vh;
-    height: 36vh;
     justify-content: left;
-    transition: var(--transition);
+    width: 100%;
 }
 
 .inst-logo {
@@ -27,28 +25,29 @@
 
 .ed-content {
     display: none;
-    position: relative;
-    left: 2em;
-    top: 5em;
+    text-decoration: solid;
 }
 
-.ed-col:hover {
-    width: 150vh;
-    height: 30vh;
-}
+.ed-col:hover .ed-logo {
+    left: 70%;
 
-.ed-col:hover .inst-logo {
-    object-fit: cover;
 }
 
 .ed-col:hover .ed-content {
     display: block;
+    width: 70%;
+    position: relative;
+    right: 25%;
+    top: 10%;
 }
 
 .ed-logo {
     border-radius: 50%;
     width: 35vh;
     height: 35vh;
+    position: relative;
+    left: 38%;
+    transition: var(--transition);
 }
 
 .ed-col-school {
@@ -69,8 +68,27 @@
     display: block;
 }
 
-@media screen and (max-width:600px) {
-    .section {
-        margin-top: 11rem;
+@media (max-width:600px) {
+    #education {
+        margin-top: 13em;
+    }
+
+    .ed-container {
+        width: 40%;
+    }
+
+    .ed-col {
+        flex-direction: column;
+    }
+
+    .ed-col:hover {
+        width: 36vb;
+        height: 36vh;
+    }
+
+    .ed-content {
+        width: 100%;
+        text-align: center;
+        display: block;
     }
 }
