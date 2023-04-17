@@ -1,6 +1,5 @@
 .ed-container {
-    height: 100vh;
-    width: 215vh;
+    width: 100vw;
     align-items: center;
     gap: 3em;
     display: flex;
@@ -74,21 +73,38 @@
     }
 
     .ed-container {
-        width: 40%;
+        width: 100vw;
     }
 
     .ed-col {
+        width: 100vw;
         flex-direction: column;
+        align-items: left;
     }
 
-    .ed-col:hover {
-        width: 36vb;
-        height: 36vh;
+    .ed-logo {
+        position: relative;
+        left: 17%;
+    }
+
+    .ed-col:hover .ed-logo {
+        position: relative;
+        left: 17%;
     }
 
     .ed-content {
         width: 100%;
         text-align: center;
         display: block;
+        margin-top: 5%;
+    }
+
+    .ed-col:hover .ed-content {
+        width: 100%;
+        text-align: center;
+        display: block;
+        position: relative;
+        left: 0%;
+        top: 0%;
     }
 }

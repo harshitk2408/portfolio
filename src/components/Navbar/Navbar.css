@@ -33,6 +33,6 @@ nav a.active {
 /*========For smaller Screen==========*/
 @media screen and (max-width:600px) {
     nav {
-        gap: 1.1rem;
+        display: none;
     }
 }
