@@ -1,0 +1,117 @@
+.skillbars{
+    display: grid;
+    grid-template-columns: 33% 33%;
+    gap: 15%;
+    row-gap: 30%;
+    justify-content: center;
+}
+.skillcontent{
+    display: flex;
+    flex-direction: column;
+}
+.skillbarbg{
+    height: 20px;
+    background-color: grey;
+    border-radius: 20px;
+}
+.skillbarbg-c{
+    height: 100%;
+    border-radius: 20px;
+    background-color:darkslategrey;
+    width: 50%;
+    animation: width-c 2s ;
+}
+@keyframes width-c{
+    from {width: 0%;}
+    to {width: 50%;}
+}
+.skillbarbg-cpp{
+    height: 100%;
+    border-radius: 20px;
+    background-color:darkslategrey;
+    animation: width-cpp 2s ;
+    width:80%;
+}
+@keyframes width-cpp{
+    from {width: 0%;}
+    to {width:80%;}
+
+}
+.skillbarbg-Python{
+    height: 100%;
+    border-radius: 20px;
+    background-color:darkslategrey;
+    width: 50%;
+    animation: width-py 2s ;
+}
+@keyframes width-py{
+    from {width: 0%;}
+    to {width: 50%;}
+
+}
+.skillbarbg-HTML{
+    height: 100%;
+    border-radius: 20px;
+    background-color:darkslategrey;
+    animation: width-ht 2s ;
+    width:70%;
+}
+@keyframes width-ht{
+    from {width: 0%;}
+    to {width:70%;}
+
+}
+.skillbarbg-Javascript{
+    height: 100%;
+    border-radius: 20px;
+    background-color:darkslategrey;
+    animation: width-js 2s ;
+    width:80%;
+}
+@keyframes width-js{
+    from {width: 0%;}
+    to {width:80%;}
+
+}
+.skillbarbg-ReactJs{
+    height: 100%;
+    border-radius: 20px;
+    background-color:darkslategrey;
+    animation: width-re 2s ;
+    width:60%;
+}
+@keyframes width-re{
+    from {width: 0%;}
+    to {width:60%;}
+
+}
+.skillbarbg-CSS{
+    height: 100%;
+    border-radius: 20px;
+    background-color:darkslategrey;
+    animation: width-css 2s ;
+    width:50%;
+}
+@keyframes width-css{
+    from {width: 0%;}
+    to {width:50%;}
+
+}
+.skillcontent p{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 1.25em;
+}
+#skills{
+    height: 550px
+}
+/*-----------------------------------------Media queries for small devices -------------------*/
+@media screen and (max-width:600px){
+    .skillbars{
+        grid-template-columns: 60%;
+        gap:10%;
+    }
+    #skills{
+        height: 800px;
+    }
+}

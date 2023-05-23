@@ -6,8 +6,13 @@
     border: none;
     outline: none;
     box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
     list-style: none;
     text-decoration: none;
+}
+
+h2 {
+    font-size: 3em;
 }
 
 :root {
@@ -115,16 +120,21 @@ img {
 }
 
 /*----------Media queries(Small devices)----------*/
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
     .container {
         width: 100vw;
     }
 
-    section>h2 {
+    section h2 {
         margin-bottom: 2rem;
     }
 
     section {
-        margin-top: 9em;
+        margin-top: 3em;
     }
 }

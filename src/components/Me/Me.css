@@ -4,23 +4,6 @@
     gap: 15%;
 }
 
-.about-me {
-    aspect-ratio: 1/1;
-    background: linear-gradient(45deg, transparent, lightcyan, transparent);
-    border-radius: 1em;
-}
-
-.about-me-image {
-    border-radius: 1em;
-    overflow: hidden;
-    transform: rotate(5deg);
-    transition: var(--transition);
-}
-
-.about-me-image:hover {
-    transform: rotate(0deg);
-}
-
 .about-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -59,6 +42,18 @@
 
 }
 
+.about-contents {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px 0px 30px;
+    align-items: center;
+}
+
+.about-block {
+    margin: auto;
+    width: 50vw;
+}
+
 /*----------Media queries(Small devices)----------*/
 @media screen and (max-width:600px) {
     .about-container {
@@ -76,4 +71,11 @@
         text-align: center;
     }
 
+    .about-block {
+        width: 100vw;
+    }
+
+}
+#contact h2{
+    margin-bottom: 0;
 }

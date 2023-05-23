@@ -9,8 +9,83 @@
 
 .work {
     font-size: 4em;
+    margin: 0;
+    align-items: center;
+    padding: 0;
 }
 
 .message {
-    margin-top: 20em;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mail {
+    height: 3em;
+    padding: 10px;
+    font-size: 1em;
+    width: 50%;
+    margin-bottom: 1em;
+    border-radius: 10px;
+}
+
+.mess {
+    font-size: 1em;
+    height: 20em;
+    width: 50%;
+    border-radius: 10px;
+    margin-bottom: 3em;
+    padding: 10px;
+}
+
+.subbut {
+    width: 50%;
+    height: 3em;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1em;
+    margin-bottom: 5em;
+    background-color: white;
+    cursor: pointer;
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+
+}
+
+.subbut:hover {
+    background-color: azure;
+    color: black;
+}
+
+@keyframes width {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%
+    }
+}
+
+/* ---------------------------------------------Media queries for Small devices------------------------------ */
+@media screen and (max-width:600px) {
+    .work {
+        font-size: 2em
+    }
+
+    .subbut {
+        background-color: white;
+        color: black;
+    }
+
+    .mail {
+        width: 70%;
+    }
+
+    .mess {
+        width: 70%;
+    }
 }
