@@ -1,7 +1,7 @@
 import React from 'react'
 import './Me.css'
 import { BsLaptop } from 'react-icons/bs'
-import { BsFillBookmarkFill } from 'react-icons/bs'
+import { FaGraduationCap} from 'react-icons/fa'
 export default function Me() {
     return (
         <section id='about'>
@@ -18,7 +18,7 @@ export default function Me() {
                             <small>C++, Adobe Premiere Pro, HTML ....</small>
                         </a>
                         <a className='about-card' href='#education'>
-                            <BsFillBookmarkFill className='about-icon' />
+                            <FaGraduationCap className='about-icon' />
                             <h5>
                                 Education
                             </h5>

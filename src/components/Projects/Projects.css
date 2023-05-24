@@ -1,20 +1,118 @@
-h4{
+h4 {
     text-align: center;
 }
-.projectrow{
+
+.projectrow {
     display: flex;
     flex-direction: row;
-    gap:7%;
+    gap: 7%;
     justify-content: center;
 }
-.procard{
+
+.procard {
     box-shadow: 5px;
-    background-color: aqua;
+    background-color: rgb(0, 0, 0);
     height: 200px;
     width: 25%;
+    position: relative;
 }
-.proim{
+
+.procard:hover .proim {
+    cursor: pointer;
+    opacity: 0.2;
+}
+
+.procard:hover .progit {
+    display: block;
+}
+
+.procard:hover .prolink {
+    display: block;
+}
+
+.proim {
     height: 100%;
     width: 100%;
     object-fit: fill;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.progit {
+    display: none;
+    position: absolute;
+    top: 35%;
+    left: 30%
+}
+
+.prolink {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 60%
+}
+
+.progit:hover+.proim {
+    cursor: pointer;
+    opacity: 0.2;
+}
+
+.single {
+    left: 45%
+}
+
+.procard:hover .proname {
+    display: block;
+}
+
+.proname {
+    display: none;
+    position: absolute;
+    left: 40%;
+    top: 15%
+}
+.myReact-icons{
+    height: 2em;
+    width: 2em;
+}
+@media  screen and (max-width:600px){
+    .projectrow{
+        flex-direction: column;
+        align-items: center;
+        gap:80px;
+    }
+    .procard:hover .proim{
+        opacity: 1;
+    }
+    #projects{
+        margin-bottom: 80px;
+    }
+    .proname{
+        display: block;
+        top:110%;
+        left:0%
+    }
+    .procard{
+        height: 150px;
+        width: 70%;
+    }
+    .progit{
+        top:110%;
+        size: 20%;
+        left:70%;
+        display:block
+    }
+    .prolink{
+        top:110%;
+        size: 20%;
+        left:90%;
+        display:block
+    }
+    .git{
+        size:100px
+    }
+    .myReact-icons{
+        height: 1.5em;
+        width: 1.5em;
+    }
 }

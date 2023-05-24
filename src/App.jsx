@@ -12,9 +12,9 @@ export default function App() {
             <Header />
             <Navbar />
             <Me />
+            <Projects/>
             <Education />
             <Skills />
-            <Projects />
             <Contact />
         </div>
     )

@@ -11,13 +11,13 @@
 }
 .skillbarbg{
     height: 20px;
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.312);
     border-radius: 20px;
 }
 .skillbarbg-c{
     height: 100%;
     border-radius: 20px;
-    background-color:darkslategrey;
+    background-color:rgba(198, 206, 206, 0.57);
     width: 50%;
     animation: width-c 2s ;
 }
@@ -28,7 +28,7 @@
 .skillbarbg-cpp{
     height: 100%;
     border-radius: 20px;
-    background-color:darkslategrey;
+    background-color:rgba(198, 206, 206, 0.57);
     animation: width-cpp 2s ;
     width:80%;
 }
@@ -40,7 +40,7 @@
 .skillbarbg-Python{
     height: 100%;
     border-radius: 20px;
-    background-color:darkslategrey;
+    background-color:rgba(198, 206, 206, 0.57);
     width: 50%;
     animation: width-py 2s ;
 }
@@ -52,7 +52,7 @@
 .skillbarbg-HTML{
     height: 100%;
     border-radius: 20px;
-    background-color:darkslategrey;
+    background-color:rgba(198, 206, 206, 0.57);
     animation: width-ht 2s ;
     width:70%;
 }
@@ -64,7 +64,7 @@
 .skillbarbg-Javascript{
     height: 100%;
     border-radius: 20px;
-    background-color:darkslategrey;
+    background-color:rgba(198, 206, 206, 0.57);
     animation: width-js 2s ;
     width:80%;
 }
@@ -76,7 +76,7 @@
 .skillbarbg-ReactJs{
     height: 100%;
     border-radius: 20px;
-    background-color:darkslategrey;
+    background-color:rgba(198, 206, 206, 0.57);
     animation: width-re 2s ;
     width:60%;
 }
@@ -88,7 +88,7 @@
 .skillbarbg-CSS{
     height: 100%;
     border-radius: 20px;
-    background-color:darkslategrey;
+    background-color:rgba(198, 206, 206, 0.57);
     animation: width-css 2s ;
     width:50%;
 }

@@ -11,6 +11,7 @@
     text-decoration: none;
 }
 
+
 h2 {
     font-size: 3em;
 }
@@ -38,10 +39,9 @@ html {
 
 body {
     font-family: 'Mukta', sans-serif;
-    background-image: url(./assets/bgimage.jpg);
-    background-size: cover;
     color: var(--color-white);
     line-height: 1.7;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(92,92,92,1) 100%, rgba(0,212,255,1) 100%);
 }
 
 /* ------------General Style-------------- */
