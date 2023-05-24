@@ -18,7 +18,6 @@ h4 {
 }
 
 .procard:hover .proim {
-    cursor: pointer;
     opacity: 0.2;
 }
 
